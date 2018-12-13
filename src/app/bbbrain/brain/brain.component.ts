@@ -1,8 +1,8 @@
-import { Component, OnInit, Input, Output } from '@angular/core';
-import { Router, ActivatedRoute } from '@angular/router';
+import { Component, OnInit, Input } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 class Brain {
-  id: number;
+  id: number
 }
 
 @Component({
@@ -16,17 +16,12 @@ export class BrainComponent implements OnInit {
     id: null
   };
 
-  constructor(
-    private route: ActivatedRoute,
-    private router: Router
-  ) { }
+  constructor( private route: ActivatedRoute ) { }
 
   ngOnInit() {
-    this.route
-      .paramMap
-      .subscribe(paramMap => {
-          this.brain.id = parseInt(paramMap.get('id'));
-      });
+    this.route.paramMap.subscribe(paramMap => {
+      this.brain.id = parseInt(paramMap.get('id'))
+    })
   }
 
 }
