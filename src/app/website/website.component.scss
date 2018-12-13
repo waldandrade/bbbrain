@@ -1,0 +1,27 @@
+.website-bg {
+    background-color: black;
+}
+
+.bbbrain-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.bbbrain-spacer {
+    flex: 1 1 auto;
+}
+
+.luarosa {
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    z-index: 0;
+}
+
+.luaazul {
+    position: absolute;
+    bottom: 10%;
+    right: 150px;
+}

@@ -11,12 +11,16 @@ import { WorkspaceComponent } from './bbbrain/workspace/workspace.component';
 import { BrainComponent } from './bbbrain/brain/brain.component';
 
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { WebsiteComponent } from './website/website.component';
+import { BbbrainComponent } from './bbbrain/bbbrain.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WorkspaceComponent,
-    BrainComponent
+    BrainComponent,
+    WebsiteComponent,
+    BbbrainComponent
   ],
   imports: [
     BrowserModule,
