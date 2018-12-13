@@ -7,10 +7,14 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MaterialModule } from './material';
+import { WorkspaceComponent } from './bbbrain/workspace/workspace.component';
+import { BrainComponent } from './bbbrain/brain/brain.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    WorkspaceComponent,
+    BrainComponent
   ],
   imports: [
     BrowserModule,

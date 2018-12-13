@@ -10,17 +10,18 @@
   <mat-sidenav-container class="bbbrain-container">
     <mat-sidenav #sidenav mode="side" opened class="bbbrain-sidenav">
       <mat-nav-list>
-        <mat-list-item *ngFor="let page of pages">
+        <mat-list-item routerLink="/workspace"  routerLinkActive="active">
+          <mat-icon mat-list-icon>home</mat-icon> 
+          <a matLine >Inicio</a>
+        </mat-list-item>
+        <mat-list-item routerLink="/brain/{{page.id}}"  routerLinkActive="active" *ngFor="let page of pages">
           <mat-icon mat-list-icon>{{page.icon}}</mat-icon> 
-          <a matLine routerLink="{{page.route}}">{{ page.name }}</a>
+          <a matLine >{{ page.name }}</a>
         </mat-list-item>
       </mat-nav-list>
     </mat-sidenav>
 
     <mat-sidenav-content>
-      <div style="text-align:center">
-        <img width="300" alt="Angular Logo" src="assets/bbbrain_icon.svg">
-      </div>
       <router-outlet></router-outlet>
     </mat-sidenav-content>
   </mat-sidenav-container>
