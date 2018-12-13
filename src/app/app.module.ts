@@ -10,6 +10,8 @@ import { MaterialModule } from './material';
 import { WorkspaceComponent } from './bbbrain/workspace/workspace.component';
 import { BrainComponent } from './bbbrain/brain/brain.component';
 
+import { FlexLayoutModule } from '@angular/flex-layout';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +22,8 @@ import { BrainComponent } from './bbbrain/brain/brain.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
